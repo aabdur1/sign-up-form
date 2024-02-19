@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  background-image: url(pablo.jpg);
+  background-position: 0 10%;
+  background-size: 60%;
+}
+
+header {
+  display: flex;
+  margin-top: 20%;
+  margin-inline: auto;
+  padding: 1rem;
+  width: 40%;
+  height: 4rem;
+  justify-content: center;
+  background-color: rgba(83, 58, 39, 0.458);
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: bisque;
+  text-shadow: 1px 1px 2px #ffad31;
+  font-size: 3.5rem;
+}
+
+.text {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.logo > h1 {
+  font-family: gelica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  align-items: center;
+}
+
+.logo > h2 {
+  font-family: gelica, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  padding-top: 5%;
+  padding-inline: 1.5rem;
+  background-color: rgb(219, 152, 70);
+  width: 60%;
+  height: 100vh;
+  font-family: gelica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.container > form {
+  font-size: 1.8rem;
+}
