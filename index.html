@@ -10,37 +10,37 @@
 <body>
   <header>
     <div class="logo">
-      <img src="cutie.png" alt="Pablo as an orange" width="80px" height="80px">
-      <div class="logo text">
-        <h1 class="logo text">Pablo</h1>
-        <h2 class="logo text">pics</h2>
+      <img src="cutie.png" alt="Pablo as an orange" width="90px" height="90px">
+      <div class="logo header">
+        <h1 class="logo header">Pablo</h1>
+        <h2 class="logo header">pics<span class="sup"><sup>RX&#8482</sup></span></h2>
       </div>
     </div>
   </header>
   <div class="container">
     <p class="text">Do you like strange and often unflattering pictures of Pablo? Well this is the fake website for you!</p>
     <p class="sign-up">Sign up now!</p>
-    <form action="POST">
+    <form>
       <fieldset>
         <p class="title">Fill out for Pablo pics. Definitely not a scam.</p>
-        <section id="name">
-          <label for="first">First name:</label>
-          <input type="text" id="first" name="first-name">
-          <label for="last">Last name:</label>
-          <input type="text" id="last" name="last-name">
-        </section>
-        <section id="email-tel">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email">
-          <label for="tel">Phone number:</label>
-          <input type="text" id="tel" name="phone">
-        </section>
-        <section id="pwd">
-          <label for="pwd">Create password:</label>
-          <input type="password" name="password" id="pwd">
-          <label for="confirm-pwd">Confirm password:</label>
-          <input type="password" name="password" id="pwd">
-        </section>
+        <div class="input-wrapper">
+          <section id="left">
+            <label for="first">First name:</label>
+            <input type="text" id="first" name="first-name">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <label for="pwd">Create password:</label>
+            <input type="password" name="password" id="pwd">
+          </section>
+          <section id="right">
+            <label for="last">Last name:</label>
+            <input type="text" id="last" name="last-name">
+            <label for="tel">Phone number:</label>
+            <input type="text" id="tel" name="phone">
+            <label for="confirm-pwd">Confirm password:</label>
+            <input type="password" name="password" id="pwd">
+          </section>
+        </div>
         <button type="submit">Create account</button>
       </fieldset>
     </form>

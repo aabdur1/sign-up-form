@@ -9,11 +9,11 @@ body {
 
 header {
   display: flex;
-  margin-top: 20%;
+  margin-top: 17%;
   margin-inline: auto;
   padding: 1rem;
-  width: 40%;
-  height: 4rem;
+  width: 50%;
+  height: 6rem;
   justify-content: center;
   background-color: rgba(83, 58, 39, 0.458);
 }
@@ -25,7 +25,7 @@ header {
   align-items: center;
   color: bisque;
   text-shadow: 1px 1px 2px #ffad31;
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 .text {
@@ -33,18 +33,32 @@ header {
   gap: 0.5rem;
 }
 
-.logo > h1 {
+.logo > h1,
+.sup {
   font-family: gelica, sans-serif;
   font-weight: 700;
   font-style: normal;
   align-items: center;
 }
 
+.sup {
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
 .logo > h2 {
   font-family: gelica, sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 3rem;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
 }
 
 .container {
@@ -52,10 +66,10 @@ header {
   flex-direction: column;
   margin-inline: auto;
   padding-top: 5%;
-  padding-inline: 1.5rem;
+  padding-inline: 2rem;
   background-color: rgb(219, 152, 70);
   width: 60%;
-  height: 100vh;
+  height: 91vh;
   font-family: gelica, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -64,15 +78,55 @@ header {
 }
 
 .container > form {
-  font-size: 1.8rem;
+  background-color: rgb(237, 188, 128);
+  font-size: 1.3rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+label,
+input {
+  width: 15rem;
+}
+
+fieldset {
+  border: none;
+  box-shadow: 
+  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 8px 8px hsl(117deg 0% 0% / 0.075),
+  0 16px 16px hsl(117deg 0% 0% / 0.075)
+  ;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 button {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-block: 1rem;
   font-family: gelica, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 1.5rem;
+  cursor: pointer;
   box-shadow: 
   0 1px 1px hsla(117deg, 0%, 0%, 0.075),
   0 2px 2px hsl(117deg 0% 0% / 0.075),
@@ -81,4 +135,14 @@ button {
   0 16px 16px hsl(117deg 0% 0% / 0.075)
   ;
   transition: 250ms;
+}
+
+button:hover {
+  transform: translateY(4%);
+  box-shadow: 
+  0 1px 1px hsla(117deg, 0%, 0%, 0.075),
+  0 2px 2px hsl(117deg 0% 0% / 0.075),
+  0 4px 4px hsl(117deg 0% 0% / 0.075),
+  0 12px 12px hsl(117deg 0% 0% / 0.33)
+  ;
 }
