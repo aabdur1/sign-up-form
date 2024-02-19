@@ -9,7 +9,7 @@ body {
 
 header {
   display: flex;
-  margin-top: 17%;
+  margin-top: 13%;
   margin-inline: auto;
   padding: 1rem;
   width: 50%;
@@ -23,14 +23,9 @@ header {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  color: bisque;
+  color: rgb(255, 235, 211);
   text-shadow: 1px 1px 2px #ffad31;
   font-size: 5rem;
-}
-
-.text {
-  display: flex;
-  gap: 0.5rem;
 }
 
 .logo > h1,
@@ -53,6 +48,12 @@ header {
   font-size: 3rem;
 }
 
+.text {
+  display: flex;
+  gap: 0.5rem;
+  color: bisque;
+}
+
 button,
 input,
 select,
@@ -64,7 +65,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  background-color: #d3ffda;
+  background-color: #ffb3b359;
   border-color: #ffad31 s;
 }
 
@@ -72,7 +73,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   margin-inline: auto;
-  padding-top: 5%;
+  padding-top: 7%;
   padding-inline: 2rem;
   background-color: rgb(219, 152, 70);
   width: 58%;
@@ -80,28 +81,14 @@ textarea:focus {
   font-family: gelica, sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: left;
 }
 
 .container > form {
   background-color: rgb(237, 188, 128);
-  font-size: 1.1rem;
-}
-
-label {
-  font-size: 1rem;
-}
-
-label,
-input {
-  width: 10rem;
-  appearance: none;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
+  font-size: 1.2rem;
+  border-radius: 17px;
   border: none;
   box-shadow: 
   0 1px 1px hsla(117deg, 0%, 0%, 0.075),
@@ -112,10 +99,33 @@ fieldset {
   ;
 }
 
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
 section {
   display: flex;
-  margin: 0.5rem;
+  margin: 1.3rem;
   gap: 1rem;
+}
+
+label {
+  font-size: 1rem;
+  width: 9rem;
+}
+
+
+input {
+  width: 13rem;
+  appearance: none;
+  background-color: #ffe3b992;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 2px hsl(35, 93%, 40%);
 }
 
 button {
@@ -126,6 +136,7 @@ button {
   font-weight: 500;
   font-style: normal;
   font-size: 1.3rem;
+  border-radius: 8px;
   cursor: pointer;
   box-shadow: 
   0 1px 1px hsla(117deg, 0%, 0%, 0.075),
