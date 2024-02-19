@@ -18,19 +18,33 @@
     </div>
   </header>
   <div class="container">
-    <p class="text">Do you like often strange and unflattering pictures of Pablo? Well this is the fake website for you!</p>
+    <p class="text">Do you like strange and often unflattering pictures of Pablo? Well this is the fake website for you!</p>
     <p class="sign-up">Sign up now!</p>
     <form action="POST">
-      <p class="title">Fill out for Pablo pics</p>
-        <label for="first">First name:</label>
-        <input type="text" id="first" name="first-name">
-        <label for="last">Last name:</label>
-        <input type="text" id="last" name="last-name">
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
-        <label for="tel">Phone number:</label>
-        <input type="text" id="tel" name="phone">
+      <fieldset>
+        <p class="title">Fill out for Pablo pics. Definitely not a scam.</p>
+        <section id="name">
+          <label for="first">First name:</label>
+          <input type="text" id="first" name="first-name">
+          <label for="last">Last name:</label>
+          <input type="text" id="last" name="last-name">
+        </section>
+        <section id="email-tel">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email">
+          <label for="tel">Phone number:</label>
+          <input type="text" id="tel" name="phone">
+        </section>
+        <section id="pwd">
+          <label for="pwd">Create password:</label>
+          <input type="password" name="password" id="pwd">
+          <label for="confirm-pwd">Confirm password:</label>
+          <input type="password" name="password" id="pwd">
+        </section>
+        <button type="submit">Create account</button>
+      </fieldset>
     </form>
+    <p class="login">Already have an account? <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">Log in</a></p>
   </div>
 </body>
 </html>
