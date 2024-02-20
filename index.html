@@ -51,8 +51,9 @@
     const pwd = document.querySelector("#pwd")
     const confirmPwd = document.querySelector("#confirm-pwd")
     const errorMsg = document.querySelector("span.error")
-
-    pwd.addEventListener("input", (event) => {
+    pwd.addEventListener("input", checkPwd)
+    confirmPwd.addEventListener("input", checkPwd)
+    function checkPwd(event) {
       if (pwd.value !== confirmPwd.value) {
         pwd.className = "error"
         confirmPwd.className = "error"
@@ -62,19 +63,7 @@
         confirmPwd.classList.remove("error")
         errorMsg.textContent = ""
       }
-    })
-
-    confirmPwd.addEventListener("input", (event) => {
-      if (pwd.value !== confirmPwd.value) {
-        pwd.className = "error"
-        confirmPwd.className = "error"
-        errorMsg.textContent = "Passwords do not match"
-      } else if (pwd.value === confirmPwd.value) {
-        pwd.classList.remove("error")
-        confirmPwd.classList.remove("error")
-        errorMsg.textContent = ""
-      }
-    })
+    }
   </script>
 </body>
 </html>
