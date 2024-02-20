@@ -59,6 +59,16 @@
         confirmPwd.classList.remove("error")
       }
     })
+
+    confirmPwd.addEventListener("input", (event) => {
+      if (pwd.value !== confirmPwd.value) {
+        pwd.className = "error"
+        confirmPwd.className = "error"
+      } else if (pwd.value === confirmPwd.value) {
+        pwd.classList.remove("error")
+        confirmPwd.classList.remove("error")
+      }
+    })
   </script>
 </body>
 </html>

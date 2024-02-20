@@ -173,6 +173,7 @@ button:hover {
 }
 
 input[type="password"].error {
-  border-color: red;
-  background-color: red;
+  outline-color: red;
+  outline-width: 2px;
+  background-color: rgba(253, 141, 141, 0.301);
 }
