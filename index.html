@@ -35,7 +35,7 @@
           <label for="tel">Phone number:</label>
           <input type="text" id="tel" name="phone" placeholder="9999991234">
         </section>
-        <section id="pwd">
+        <section id="new-pwd">
           <label for="pwd">Create password:</label>
           <input type="password" name="pwd" id="pwd" placeholder="*******">
           <label for="confirm-pwd">Confirm password:</label>
@@ -46,5 +46,19 @@
     </form>
     <p class="text login">Already have an account? <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">Log in</a></p>
   </div>
+  <script>
+    const pwd = document.querySelector("#pwd")
+    const confirmPwd = document.querySelector("#confirm-pwd")
+
+    pwd.addEventListener("input", (event) => {
+      if (pwd.value !== confirmPwd.value) {
+        pwd.className = "error"
+        confirmPwd.className = "error"
+      } else if (pwd.value === confirmPwd.value) {
+        pwd.classList.remove("error")
+        confirmPwd.classList.remove("error")
+      }
+    })
+  </script>
 </body>
 </html>
