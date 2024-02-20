@@ -40,23 +40,27 @@
           <input type="password" name="pwd" id="pwd" placeholder="*******" required>
           <label for="confirm-pwd">Confirm password:</label>
           <input type="password" name="password" id="confirm-pwd" placeholder="*******" required>
+          <span class="error"></span>
         </section>
       </div>
-      <button type="submit">Create account</button>
+      <button type="submit" id="submit">Create account</button>
     </form>
     <p class="text login">Already have an account? <a href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form">Log in</a></p>
   </div>
   <script>
     const pwd = document.querySelector("#pwd")
     const confirmPwd = document.querySelector("#confirm-pwd")
+    const errorMsg = document.querySelector("span.error")
 
     pwd.addEventListener("input", (event) => {
       if (pwd.value !== confirmPwd.value) {
         pwd.className = "error"
         confirmPwd.className = "error"
+        errorMsg.textContent = "Passwords do not match"
       } else if (pwd.value === confirmPwd.value) {
         pwd.classList.remove("error")
         confirmPwd.classList.remove("error")
+        errorMsg.textContent = ""
       }
     })
 
@@ -64,9 +68,11 @@
       if (pwd.value !== confirmPwd.value) {
         pwd.className = "error"
         confirmPwd.className = "error"
+        errorMsg.textContent = "Passwords do not match"
       } else if (pwd.value === confirmPwd.value) {
         pwd.classList.remove("error")
         confirmPwd.classList.remove("error")
+        errorMsg.textContent = ""
       }
     })
   </script>

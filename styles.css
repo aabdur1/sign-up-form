@@ -142,9 +142,8 @@ input {
   box-shadow: inset 0 2px 2px hsl(35, 93%, 40%);
 }
 
-button {
+button#submit {
   width: 11rem;
-  margin-top: 1.5rem;
   margin-block: 1rem;
   font-family: gelica, sans-serif;
   font-weight: 500;
@@ -152,6 +151,7 @@ button {
   font-size: 1.3rem;
   border-radius: 8px;
   cursor: pointer;
+  background-color: bisque;
   box-shadow: 
   0 1px 1px hsla(117deg, 0%, 0%, 0.075),
   0 2px 2px hsl(117deg 0% 0% / 0.075),
@@ -176,4 +176,9 @@ input[type="password"].error {
   outline-color: red;
   outline-width: 2px;
   background-color: rgba(253, 141, 141, 0.301);
+}
+
+span.error {
+  font-size: 1rem;
+  color: rgba(222, 26, 26, 0.685);
 }
