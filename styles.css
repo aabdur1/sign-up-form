@@ -1,21 +1,31 @@
 body {
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
   margin: 0;
-  background-image: url(pablo.jpg);
-  background-position: 0 10% no-repeat;
-  background-size: 60%;
 }
 
 header {
+  width: 45%;
+  background-image: url(pablo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+div.logo.header {
+  height: 10rem;
+}
+
+div.logo.main {
   display: flex;
-  margin-top: 13%;
-  margin-inline: auto;
-  padding: 1rem;
-  width: 50%;
-  height: 6rem;
   justify-content: center;
-  background-color: rgba(83, 58, 39, 0.458);
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-inline: auto;
+  background-color: rgba(136, 77, 32, 0.458);
+  height: 10rem;
+  width: 100%;
 }
 
 .logo {
@@ -56,6 +66,7 @@ header {
   margin: 0;
   padding-inline: 2rem;
   background-color: rgb(219, 152, 70);
+  color: rgb(123, 68, 0);
   width: 58%;
   height: 100vh;
   font-family: gelica, sans-serif;
@@ -65,10 +76,8 @@ header {
   text-align: left;
 }
 
-.text {
-  display: flex;
-  gap: 0.5rem;
-  color: bisque;
+.text1 {
+  padding-top: 4rem;
 }
 
 .container > form {
@@ -128,7 +137,9 @@ label {
 }
 
 .title,
-label {
+label,
+button,
+a {
   color: rgb(123, 68, 0);
 }
 
@@ -149,6 +160,7 @@ button#submit {
   font-weight: 500;
   font-style: normal;
   font-size: 1.3rem;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
   background-color: bisque;
@@ -183,24 +195,22 @@ span.error {
   color: rgba(222, 26, 26, 0.685);
 }
 
-footer.github {
-  position: fixed;
-  bottom: 1%;
-  right: 1%;
-  font-size: 1.5rem;
+footer.links {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 img.github {
   width: 1rem;
   height: 1rem;
   padding-right: 0.2rem;
-  opacity: 75%;
-}
-
-a {
-  color: bisque;
+  opacity: 70%;
 }
 
 a.github {
+  position: absolute;
+  bottom: 1%;
+  right: -25px;
   text-decoration: none;
 }
