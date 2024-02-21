@@ -107,7 +107,7 @@ div.input-wrapper {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
   gap: 0.1rem 10%;
   align-items: start;
   justify-items: center;
@@ -151,7 +151,7 @@ a {
 
 button#submit {
   width: 11rem;
-  margin-block: 2rem;
+  margin-bottom: 2rem;
   font-family: gelica, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -190,6 +190,7 @@ span.error {
   width: 70%;
   font-size: 1rem;
   color: rgba(222, 26, 26, 0.685);
+  align-self: self-start;
 }
 
 footer.links {
